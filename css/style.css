@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 240, 102);
+}
+
+#container {
+    width: 70%;
+    height: 350px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px;
+    background-color: whitesmoke;
+    display: grid;
+    align-items: flex-start;
+
+}
+#score{
+    margin: auto;
+    font-size: 2rem;
+
+}
+
+#options-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 10px 0;
+    list-style: none;
+
+}
+/* .optionsbtn{
+    margin-top: 10px;
+    height: 56px;
+} */
+#stat{
+    margin-top: 5px;
+}
+
+#question-text {
+    font-size: 30px;
+}
+
+#answers-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#action-container {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+.btn {
+    background-color: rgb(33, 107, 156);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+#btn-start {
+    /* margin-top: 90px; */
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    height: fit-content;
+}
+.restart-btn{
+    font-size: 20px;
+
+}
+
+#btn-result {
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+
+#btn-next {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.correct {
+    background-color: limegreen;
+}
+#correct-answers{
+    align-self: flex-start;
+margin-left: 20px;
+line-height: 30px;
+}
+
+.incorrect {
+    background-color: tomato;
+}
+
+.hide {
+    display: none;
+    list-style: none;
+}
+#showquestion{
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.options{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem blue;
+    width: 15rem;
+    /* background: lightblue; */
+    border-radius: 1rem;
+}
